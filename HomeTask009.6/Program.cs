@@ -12,7 +12,6 @@ string CR()
 }
 try
 {
-
   int recursion(int m, int n)
   {
     if (m == 0) return n + 1;
@@ -25,7 +24,7 @@ try
   int numberM = Int32.Parse(CR());
   CWL("Введите число n: ");
   int numberN = Int32.Parse(CR());
-  CW(numberM >= 0 && numberN >= 0 ?
+  CWL(numberM >= 0 && numberN >= 0 ?
   $"Результат вычисления функции Аккермана А({numberM},{numberN}) = {recursion(numberM, numberN)}"
   : "Заданы отрицательные значения.");
 }
